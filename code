@@ -1,0 +1,12 @@
+import re
+N=int(input())
+for i in range(N):
+    s=input()
+    if len(s)== 10:
+       number=re.findall(r'[789]\d{9}$',s)  #re.findall(REGEX PATTERN,STRING)
+       if len(number)==1:
+            print('YES')
+       else:
+            print('NO')
+    else:
+        print('NO')
